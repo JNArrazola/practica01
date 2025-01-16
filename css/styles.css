@@ -48,6 +48,7 @@ h1, h2 {
 
 .navbar .nav-links li a:hover {
     color: #f0a500;
+    text-decoration: underline;
 }
 
 .hero-section {
@@ -73,6 +74,8 @@ h1, h2 {
     text-align: center;
     background-color: rgba(0, 0, 0, 0.5);
     padding: 20px;
+    backdrop-filter: blur(10px);
+    border-radius: 10px;
 }
 
 .hero-text h1 {
@@ -123,10 +126,9 @@ h1, h2 {
     color: #555;
 }
 
-.buy-button {
+.buy-button, .cancel-button {
     margin-top: 10px;
     padding: 10px 20px;
-    background-color: #28a745;
     color: white;
     border: none;
     border-radius: 5px;
@@ -135,10 +137,23 @@ h1, h2 {
     transition: background-color 0.3s ease;
 }
 
-.buy-button:hover {
-    background-color: #218838;
+.buy-button {
+    background-color: #28a745;
 }
 
+.buy-button:hover {
+    background-color: #218838;
+    opacity: 0.9;
+}
+
+.cancel-button {
+    background-color: #dc3545;
+}
+
+.cancel-button:hover {
+    background-color: #c82333;
+    opacity: 0.9;
+}
 
 .about-section {
     padding: 40px 20px;

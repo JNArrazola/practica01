@@ -58,20 +58,34 @@ input::placeholder {
     color: #999;
 }
 
-.register-button {
+.register-button, .cancel-button {
     width: 100%;
     padding: 12px;
-    background-color: #28a745;
     color: white;
     border: none;
     border-radius: 5px;
     font-size: 16px;
     cursor: pointer;
     transition: background-color 0.3s ease;
+    margin-top: 10px;
+}
+
+.register-button {
+    background-color: #28a745;
 }
 
 .register-button:hover {
     background-color: #218838;
+    opacity: 0.9;
+}
+
+.cancel-button {
+    background-color: #dc3545;
+}
+
+.cancel-button:hover {
+    background-color: #c82333;
+    opacity: 0.9;
 }
 
 .login-link {
@@ -86,4 +100,5 @@ input::placeholder {
 
 .login-link a:hover {
     text-decoration: underline;
+    opacity: 0.8;
 }

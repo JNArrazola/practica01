@@ -61,20 +61,34 @@ input[type="checkbox"] {
     margin-right: 10px;
 }
 
-.login-button {
+.login-button, .cancel-button {
     width: 100%;
     padding: 10px;
-    background-color: #28a745;
     color: white;
     border: none;
     border-radius: 5px;
     font-size: 16px;
     cursor: pointer;
     transition: background-color 0.3s ease;
+    margin-top: 10px;
+}
+
+.login-button {
+    background-color: #28a745;
 }
 
 .login-button:hover {
     background-color: #218838;
+    opacity: 0.9;
+}
+
+.cancel-button {
+    background-color: #dc3545;
+}
+
+.cancel-button:hover {
+    background-color: #c82333;
+    opacity: 0.9;
 }
 
 .register-link {
@@ -89,4 +103,5 @@ input[type="checkbox"] {
 
 .register-link a:hover {
     text-decoration: underline;
+    opacity: 0.8;
 }

@@ -1,10 +1,21 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/styles.css">
     <title>T-Store</title>
+    <script>
+        function viewDetails(url) {
+            try {
+                if (confirm('¿Estás seguro de que deseas ver los detalles de este producto?')) {
+                    window.location.href = url;
+                }
+            } catch (error) {
+                alert('Ocurrió un error al intentar ver los detalles del producto. Por favor, inténtalo de nuevo.');
+            }
+        }
+    </script>
 </head>
 <body>
     <nav class="navbar">
@@ -17,61 +28,70 @@
     </nav>
 
     <header class="hero-section">
-        <img src="img/2b5523d38753388e05ecd4e4f9aa1286.jpg" alt="Exotic Animals" class="hero-image">
+        <img src="img/2b5523d38753388e05ecd4e4f9aa1286.jpg" alt="Animales Exóticos" class="hero-image">
         <div class="hero-text">
             <h1>Bienvenido a T-World</h1>
         </div>
     </header>
 
     <section class="video-section">
-        <h2>Aprende más acerca de animales exóticos</h2>
-        <iframe width="100%" height="500" src="https://www.youtube.com/embed/t77QhPIw154" title="Exotic Animals" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <h2>Aprende más sobre animales exóticos</h2>
+        <iframe width="100%" height="500" src="https://www.youtube.com/embed/t77QhPIw154" title="Animales Exóticos" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
     </section>
 
     <section class="products-section">
-        <h2>Productos destacados</h2>
+        <h2>Productos Destacados</h2>
         <div class="products-grid">
             <div class="product">
                 <img src="img/bracypelma_smithi.jpg" alt="Bracypelma Smithi">
                 <p>Bracypelma Smithi <b>$1,500.00</b></p>
-                <button class="buy-button" onclick="window.location.href='pages/product_details.html'">Comprar</button>
+                <button class="buy-button" onclick="viewDetails('pages/product_details.html')">Ver Detalles</button>
+                <button class="cancel-button" onclick="window.location.href='index.html'">Cancelar</button>
             </div>
             <div class="product">
                 <img src="img/scolopendra_gigantea.jpg" alt="Scolopendra Gigantea">
                 <p>Scolopendra Gigantea <b>$2,500.00</b></p>
-                <button class="buy-button" onclick="window.location.href='pages/product_details.html'">Comprar</button>
+                <button class="buy-button" onclick="viewDetails('pages/product_details.html')">Ver Detalles</button>
+                <button class="cancel-button" onclick="window.location.href='index.html'">Cancelar</button>
             </div>
             <div class="product">
                 <img src="img/brachypelma_boehmei.jpg" alt="Brachypelma Boehmei">
-                <p>Brachypelma Boehmei <b>$1000.00</b></p>
-                <button class="buy-button" onclick="window.location.href='pages/product_details.html'">Comprar</button>
+                <p>Brachypelma Boehmei <b>$1,000.00</b></p>
+                <button class="buy-button" onclick="viewDetails('pages/product_details.html')">Ver Detalles</button>
+                <button class="cancel-button" onclick="window.location.href='index.html'">Cancelar</button>
             </div>
             <div class="product">
-                <img src="img/scolopendra_cingulata.jpeg" alt="img/scolopendra_cingulata.jpeg">
-                <p>Scolopendra Cingulata <b>$1200.00</b></p>
-                <button class="buy-button" onclick="window.location.href='pages/product_details.html'">Comprar</button>
+                <img src="img/scolopendra_cingulata.jpeg" alt="Scolopendra Cingulata">
+                <p>Scolopendra Cingulata <b>$1,200.00</b></p>
+                <button class="buy-button" onclick="viewDetails('pages/product_details.html')">Ver Detalles</button>
+                <button class="cancel-button" onclick="window.location.href='index.html'">Cancelar</button>
             </div>
         </div>
     </section>
     
-
     <section class="about-section">
-        <h2>Acerca de nosotros</h2>
-        <p>En T-Store, tenemos una pasión por ofrecer animales exóticos, bien cuidados, y legales. Nuestros animales son cuidados bajo fuertes principios éticos, garantizando una correcta calidad de vida y salud.</p>
+        <h2>Acerca de Nosotros</h2>
+        <p>En T-World, tenemos una pasión por ofrecer animales exóticos, bien cuidados y legales. Nuestros animales son cuidados bajo fuertes principios éticos, garantizando una correcta calidad de vida y salud.</p>
     </section>
 
     <section class="contact-section">
-        <h2>Contactanos</h2>
-        <p>Si tiene alguna pregunta, puedes usar los siguientes medios.</p>
+        <h2>Contáctanos</h2>
+        <p>Si tienes alguna pregunta, puedes usar los siguientes medios.</p>
         <div class="contact-info">
             <p>Email: 2230023@upv.edu.mx</p>
             <p>Teléfono: +52 123 456 7890</p>
-            <p>Localización: Av. Nuevas Tecnologías, Parque científico y tecnológico, Ciudad Victoria, Tamaulipas, México</p>
+            <p>Localización: Av. Nuevas Tecnologías, Parque Científico y Tecnológico, Ciudad Victoria, Tamaulipas, México</p>
         </div>
+    </section>
+
+    <section class="help-section">
+        <h2>Ayuda</h2>
+        <p>Para ver los detalles de un producto, haz clic en "Ver Detalles". Si tienes problemas, contacta con nuestro soporte técnico en <a href="mailto:soporte@t-world.com">soporte@t-world.com</a>.</p>
     </section>
 
     <footer class="footer">
         <p>&copy; 2024 T-World. Todos los derechos reservados. Recuerda, NO al abuso animal.</p>
     </footer>
+
 </body>
 </html>
